@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Covid-19 By Vitians</string>
+
+
+
+
+
+
+    <!--App changelog-->
+    <string name="changelogTitle">Covid-19 Status v2.1</string>
+    <string name="changelog">\u2022 Fixed some layout glitches.\n\u2022 Fixed countries not showing new recovered cases.\n\u2022 Improvements in push notifications\n\u2022 Other minor under the hood changes.</string>
+</resources>
