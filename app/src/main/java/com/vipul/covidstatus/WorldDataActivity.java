@@ -97,58 +97,61 @@ public class WorldDataActivity extends AppCompatActivity {
                         newRecovered = response.getString("todayRecovered");
                         totalDeceased = response.getString("deaths");
                         newDeceased = response.getString("todayDeaths");
-                        tests = response.getString("tests");
+                       // tests = response.getString("tests");
                         textView_confirmed.setText(totalCases);
-
-                        Runnable progressRunnable = new Runnable() {
-                            @Override
-                            public void run() {
-                                progressDialog.cancel();
-                                String totalActiveCopy = totalActive;
-                                String totalDeceasedCopy = totalDeceased;
-                                String totalRecoveredCopy = totalRecovered;
-
-                                int confirmedInt = Integer.parseInt(totalCases);
-                                totalCases = NumberFormat.getInstance().format(confirmedInt);
-                                textView_confirmed.setText(totalCases);
-
-                                int newCasesInt = Integer.parseInt(newCases);
-                                newCases = NumberFormat.getInstance().format(newCasesInt);
-                                textView_confirmed_new.setText("+" + newCases);
-
-                                int totalActiveInt = Integer.parseInt(totalActive);
-                                totalActive = NumberFormat.getInstance().format(totalActiveInt);
-                                textView_totalActive.setText(totalActive);
-
-                                int totalRecoveredInt = Integer.parseInt(totalRecovered);
-                                totalRecovered = NumberFormat.getInstance().format(totalRecoveredInt);
-                                textView_totalRecovered.setText(totalRecovered);
-
-                                int totalRecoveredNewInt = Integer.parseInt(newRecovered);
-                                newRecovered = NumberFormat.getInstance().format(totalRecoveredNewInt);
-                                textView_totalRecovered_new.setText("+" + newRecovered);
-
-                                int totalDeceasedInt = Integer.parseInt(totalDeceased);
-                                totalDeceased = NumberFormat.getInstance().format(totalDeceasedInt);
-                                textView_death.setText(totalDeceased);
-
-                                int totalDeceasedNewInt = Integer.parseInt(newDeceased);
-                                newDeceased = NumberFormat.getInstance().format(totalDeceasedNewInt);
-                                textView_death_new.setText("+" + newDeceased);
-
-                                int testsInt = Integer.parseInt(tests);
-                                tests = NumberFormat.getInstance().format(testsInt);
-                                textView_tests.setText(tests);
-
-                                mPieChart.addPieSlice(new PieModel("Active", Integer.parseInt(totalActiveCopy), Color.parseColor("#007afe")));
-                                mPieChart.addPieSlice(new PieModel("Recovered", Integer.parseInt(totalRecoveredCopy), Color.parseColor("#08a045")));
-                                mPieChart.addPieSlice(new PieModel("Deceased", Integer.parseInt(totalDeceasedCopy), Color.parseColor("#F6404F")));
-
-                                mPieChart.startAnimation();
-                            }
-                        };
-                        Handler pdCanceller = new Handler();
-                        pdCanceller.postDelayed(progressRunnable, 0);
+                        textView_confirmed_new.setText(newCases);
+                        textView_totalActive.setText(totalActive);
+                        textView_death.setText(totalDeceased);
+                        textView_death_new.setText(newDeceased);
+//                        Runnable progressRunnable = new Runnable() {
+//                            @Override
+//                            public void run() {
+//                                progressDialog.cancel();
+//                                String totalActiveCopy = totalActive;
+//                                String totalDeceasedCopy = totalDeceased;
+//                                String totalRecoveredCopy = totalRecovered;
+//
+//                                int confirmedInt = Integer.parseInt(totalCases);
+//                                totalCases = NumberFormat.getInstance().format(confirmedInt);
+//                                textView_confirmed.setText(totalCases);
+//
+//                                int newCasesInt = Integer.parseInt(newCases);
+//                                newCases = NumberFormat.getInstance().format(newCasesInt);
+//                                textView_confirmed_new.setText("+" + newCases);
+//
+//                                int totalActiveInt = Integer.parseInt(totalActive);
+//                                totalActive = NumberFormat.getInstance().format(totalActiveInt);
+//                                textView_totalActive.setText(totalActive);
+//
+//                                int totalRecoveredInt = Integer.parseInt(totalRecovered);
+//                                totalRecovered = NumberFormat.getInstance().format(totalRecoveredInt);
+//                                textView_totalRecovered.setText(totalRecovered);
+//
+//                                int totalRecoveredNewInt = Integer.parseInt(newRecovered);
+//                                newRecovered = NumberFormat.getInstance().format(totalRecoveredNewInt);
+//                                textView_totalRecovered_new.setText("+" + newRecovered);
+//
+//                                int totalDeceasedInt = Integer.parseInt(totalDeceased);
+//                                totalDeceased = NumberFormat.getInstance().format(totalDeceasedInt);
+//                                textView_death.setText(totalDeceased);
+//
+//                                int totalDeceasedNewInt = Integer.parseInt(newDeceased);
+//                                newDeceased = NumberFormat.getInstance().format(totalDeceasedNewInt);
+//                                textView_death_new.setText("+" + newDeceased);
+//
+//                                int testsInt = Integer.parseInt(tests);
+//                                tests = NumberFormat.getInstance().format(testsInt);
+//                                textView_tests.setText(tests);
+//
+//                              //  mPieChart.addPieSlice(new PieModel("Active", Integer.parseInt(totalActiveCopy), Color.parseColor("#007afe")));
+//                               // mPieChart.addPieSlice(new PieModel("Recovered", Integer.parseInt(totalRecoveredCopy), Color.parseColor("#08a045")));
+//                           //     mPieChart.addPieSlice(new PieModel("Deceased", Integer.parseInt(totalDeceasedCopy), Color.parseColor("#F6404F")));
+//
+//                             //   mPieChart.startAnimation();
+//                            }
+//                        };
+//                        Handler pdCanceller = new Handler();
+//                        pdCanceller.postDelayed(progressRunnable, 0);
                     } else {
                         totalCases = response.getString("cases");
                         newCases = response.getString("todayCases");
