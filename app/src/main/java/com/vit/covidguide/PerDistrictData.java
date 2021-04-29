@@ -1,4 +1,4 @@
-package com.vipul.covidstatus;
+package com.vit.covidguide;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -16,15 +16,14 @@ import org.eazegraph.lib.models.PieModel;
 import java.text.NumberFormat;
 import java.util.Objects;
 
-import static com.vipul.covidstatus.DistrictwiseDataActivity.DISTRICT_ACTIVE;
-import static com.vipul.covidstatus.DistrictwiseDataActivity.DISTRICT_CONFIRMED;
-import static com.vipul.covidstatus.DistrictwiseDataActivity.DISTRICT_DECEASED;
-import static com.vipul.covidstatus.DistrictwiseDataActivity.DISTRICT_LAST_UPDATE;
-import static com.vipul.covidstatus.DistrictwiseDataActivity.DISTRICT_NAME;
-import static com.vipul.covidstatus.DistrictwiseDataActivity.DISTRICT_NEW_CONFIRMED;
-import static com.vipul.covidstatus.DistrictwiseDataActivity.DISTRICT_NEW_DECEASED;
-import static com.vipul.covidstatus.DistrictwiseDataActivity.DISTRICT_NEW_RECOVERED;
-import static com.vipul.covidstatus.DistrictwiseDataActivity.DISTRICT_RECOVERED;
+import static com.vit.covidguide.DistrictwiseDataActivity.DISTRICT_ACTIVE;
+import static com.vit.covidguide.DistrictwiseDataActivity.DISTRICT_CONFIRMED;
+import static com.vit.covidguide.DistrictwiseDataActivity.DISTRICT_DECEASED;
+import static com.vit.covidguide.DistrictwiseDataActivity.DISTRICT_NAME;
+import static com.vit.covidguide.DistrictwiseDataActivity.DISTRICT_NEW_CONFIRMED;
+import static com.vit.covidguide.DistrictwiseDataActivity.DISTRICT_NEW_DECEASED;
+import static com.vit.covidguide.DistrictwiseDataActivity.DISTRICT_NEW_RECOVERED;
+import static com.vit.covidguide.DistrictwiseDataActivity.DISTRICT_RECOVERED;
 
 public class PerDistrictData extends AppCompatActivity {
 

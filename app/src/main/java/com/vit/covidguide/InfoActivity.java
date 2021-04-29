@@ -1,4 +1,4 @@
-package com.vipul.covidstatus;
+package com.vit.covidguide;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;

@@ -1,4 +1,4 @@
-package com.vipul.covidstatus;
+package com.vit.covidguide;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -10,7 +10,6 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import org.eazegraph.lib.charts.PieChart;
 import org.eazegraph.lib.models.PieModel;
@@ -18,15 +17,15 @@ import org.eazegraph.lib.models.PieModel;
 import java.text.NumberFormat;
 import java.util.Objects;
 
-import static com.vipul.covidstatus.StatewiseDataActivity.STATE_CONFIRMED;
-import static com.vipul.covidstatus.StatewiseDataActivity.STATE_NAME;
-import static com.vipul.covidstatus.StatewiseDataActivity.STATE_ACTIVE;
-import static com.vipul.covidstatus.StatewiseDataActivity.STATE_DECEASED;
-import static com.vipul.covidstatus.StatewiseDataActivity.STATE_NEW_CONFIRMED;
-import static com.vipul.covidstatus.StatewiseDataActivity.STATE_NEW_RECOVERED;
-import static com.vipul.covidstatus.StatewiseDataActivity.STATE_NEW_DECEASED;
-import static com.vipul.covidstatus.StatewiseDataActivity.STATE_LAST_UPDATE;
-import static com.vipul.covidstatus.StatewiseDataActivity.STATE_RECOVERED;
+import static com.vit.covidguide.StatewiseDataActivity.STATE_CONFIRMED;
+import static com.vit.covidguide.StatewiseDataActivity.STATE_NAME;
+import static com.vit.covidguide.StatewiseDataActivity.STATE_ACTIVE;
+import static com.vit.covidguide.StatewiseDataActivity.STATE_DECEASED;
+import static com.vit.covidguide.StatewiseDataActivity.STATE_NEW_CONFIRMED;
+import static com.vit.covidguide.StatewiseDataActivity.STATE_NEW_RECOVERED;
+import static com.vit.covidguide.StatewiseDataActivity.STATE_NEW_DECEASED;
+import static com.vit.covidguide.StatewiseDataActivity.STATE_LAST_UPDATE;
+import static com.vit.covidguide.StatewiseDataActivity.STATE_RECOVERED;
 
 public class PerStateData extends AppCompatActivity {
 

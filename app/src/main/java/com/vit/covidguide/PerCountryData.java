@@ -1,4 +1,4 @@
-package com.vipul.covidstatus;
+package com.vit.covidguide;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -16,15 +16,15 @@ import org.eazegraph.lib.models.PieModel;
 import java.text.NumberFormat;
 import java.util.Objects;
 
-import static com.vipul.covidstatus.CountrywiseDataActivity.COUNTRY_CONFIRMED;
-import static com.vipul.covidstatus.CountrywiseDataActivity.COUNTRY_NAME;
-import static com.vipul.covidstatus.CountrywiseDataActivity.COUNTRY_ACTIVE;
-import static com.vipul.covidstatus.CountrywiseDataActivity.COUNTRY_DECEASED;
-import static com.vipul.covidstatus.CountrywiseDataActivity.COUNTRY_NEW_CONFIRMED;
-import static com.vipul.covidstatus.CountrywiseDataActivity.COUNTRY_NEW_RECOVERED;
-import static com.vipul.covidstatus.CountrywiseDataActivity.COUNTRY_TESTS;
-import static com.vipul.covidstatus.CountrywiseDataActivity.COUNTRY_NEW_DECEASED;
-import static com.vipul.covidstatus.CountrywiseDataActivity.COUNTRY_RECOVERED;
+import static com.vit.covidguide.CountrywiseDataActivity.COUNTRY_CONFIRMED;
+import static com.vit.covidguide.CountrywiseDataActivity.COUNTRY_NAME;
+import static com.vit.covidguide.CountrywiseDataActivity.COUNTRY_ACTIVE;
+import static com.vit.covidguide.CountrywiseDataActivity.COUNTRY_DECEASED;
+import static com.vit.covidguide.CountrywiseDataActivity.COUNTRY_NEW_CONFIRMED;
+import static com.vit.covidguide.CountrywiseDataActivity.COUNTRY_NEW_RECOVERED;
+import static com.vit.covidguide.CountrywiseDataActivity.COUNTRY_TESTS;
+import static com.vit.covidguide.CountrywiseDataActivity.COUNTRY_NEW_DECEASED;
+import static com.vit.covidguide.CountrywiseDataActivity.COUNTRY_RECOVERED;
 
 
 public class PerCountryData extends AppCompatActivity {

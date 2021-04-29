@@ -1,4 +1,4 @@
-package com.vipul.covidstatus;
+package com.vit.covidguide;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -22,7 +22,6 @@ import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonArrayRequest;
-import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
 
 import org.json.JSONArray;
@@ -35,8 +34,7 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.Objects;
 
-import static com.vipul.covidstatus.StatewiseDataActivity.STATE_LAST_UPDATE;
-import static com.vipul.covidstatus.StatewiseDataActivity.STATE_NAME;
+import static com.vit.covidguide.StatewiseDataActivity.STATE_NAME;
 
 public class DistrictwiseDataActivity extends AppCompatActivity {
 
