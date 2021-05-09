@@ -471,25 +471,7 @@ public class MainActivity extends AppCompatActivity {
                     updateChanges = response.getString("changes");
 
                     if (!updateVersion.equals(String.valueOf(BuildConfig.VERSION_NAME))) {
-                        new AlertDialog.Builder(MainActivity.this)
-                                .setTitle("v" + updateVersion + " update available!")
-                                .setMessage(updateChanges)
-                                .setPositiveButton("Update", new DialogInterface.OnClickListener() {
-                                    @Override
-                                    public void onClick(DialogInterface dialog, int which) {
-                                        Intent intent = new Intent(Intent.ACTION_VIEW);
-                                        intent.setData(Uri.parse(updateUrl));
-                                        startActivity(intent);
-                                    }
-                                })
-                                .setNegativeButton("Not now", new DialogInterface.OnClickListener() {
-                                    @Override
-                                    public void onClick(DialogInterface dialog, int which) {
-                                        dialog.dismiss();
-                                    }
-                                })
-                                .setCancelable(false)
-                                .create().show();
+
                     }
                 } catch (JSONException e) {
                     e.printStackTrace();

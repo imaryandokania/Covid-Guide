@@ -125,9 +125,8 @@ public class CountrywiseDataActivity extends AppCompatActivity {
 
         countrywiseAdapter.filterList(filteredList);
     }
-
     private void extractData() {
-        String dataURL = "https://corona.lmao.ninja/v2/countries";
+        String dataURL = "https://disease.sh/v3/covid-19/countries";
         JsonArrayRequest jsonArrayRequest = new JsonArrayRequest(Request.Method.GET, dataURL, null, new Response.Listener<JSONArray>() {
             @Override
             public void onResponse(JSONArray response) {
