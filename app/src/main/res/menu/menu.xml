@@ -2,6 +2,10 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
+        android:id="@+id/vac"
+        android:title="Bot"
+        app:showAsAction="always" />
+    <item
         android:id="@+id/info"
         android:icon="@drawable/ic_signs"
         android:title="Info"

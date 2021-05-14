@@ -49,22 +49,6 @@ public class InfoActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    public void openWeb(View view) {
-        startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.vipuljha.com")));
-    }
-
-    public void openGit(View view) {
-        startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.github.com/lordarcadius")));
-    }
-
-    public void openInsta(View view) {
-        startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.instagram.com/lordarcadius")));
-    }
-
-    public void openTwitter(View view) {
-        startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.twitter.com/lordarcadius")));
-    }
-
     public void checkUpdate(View view){
 
         RequestQueue requestQueue = Volley.newRequestQueue(this);

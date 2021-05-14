@@ -141,12 +141,25 @@ public class MainActivity extends AppCompatActivity {
         return true;
     }
 
+    @SuppressLint("NonConstantResourceId")
     @Override
-    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-        if (item.getItemId() == R.id.info) {
-            Intent intent = new Intent(this, InfoActivity.class);
-            startActivity(intent);
+    public boolean onOptionsItemSelected (MenuItem item) {
+
+        switch(item.getItemId())
+        {
+            case R.id.vac:
+                Intent intent = new Intent(this, testactivity.class);
+                startActivity(intent);
+                return true;
+
+            case R.id.info:
+                Intent intent1 = new Intent(this, InfoActivity.class);
+                startActivity(intent1);
+                return true;
+
+
         }
+
         return super.onOptionsItemSelected(item);
     }
 

@@ -7,7 +7,6 @@
 
     <uses-feature android:name="android.hardware.screen.portrait" />
 
-
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -15,37 +14,41 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <meta-data android:name="com.google.firebase.messaging.default_notification_icon" android:resource="@drawable/ic_corona1" />
+        <activity android:name=".testactivity"></activity>
 
-        <activity android:name="com.vit.covidguide.WorldDataActivity" />
-        <activity android:name="com.vit.covidguide.PerDistrictData" />
-        <activity android:name="com.vit.covidguide.DistrictwiseDataActivity" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/ic_corona1" />
+
+        <activity android:name=".WorldDataActivity" />
+        <activity android:name=".PerDistrictData" />
+        <activity android:name=".DistrictwiseDataActivity" />
         <activity
-            android:name="com.vit.covidguide.InfoActivity"
+            android:name=".InfoActivity"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity" />
         <activity
-            android:name="com.vit.covidguide.PerCountryData"
+            android:name=".PerCountryData"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity" />
         <activity
-            android:name="com.vit.covidguide.CountrywiseDataActivity"
+            android:name=".CountrywiseDataActivity"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity" />
         <activity
-            android:name="com.vit.covidguide.PerStateData"
+            android:name=".PerStateData"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity" />
         <activity
-            android:name="com.vit.covidguide.StatewiseDataActivity"
+            android:name=".StatewiseDataActivity"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity" />
         <activity
-            android:name="com.vit.covidguide.MainActivity"
+            android:name=".MainActivity"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity" />
         <activity
-            android:name="com.vit.covidguide.SplashActivity"
+            android:name=".SplashActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme2"
             tools:ignore="LockedOrientationActivity">

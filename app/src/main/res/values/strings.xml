@@ -2,11 +2,7 @@
     <string name="app_name">Covid-19 By Vitians</string>
 
 
-
-
-
-
     <!--App changelog-->
-    <string name="changelogTitle">Covid-19 Status v2.1</string>
-    <string name="changelog">\u2022 Fixed some layout glitches.\n\u2022 Fixed countries not showing new recovered cases.\n\u2022 Improvements in push notifications\n\u2022 Other minor under the hood changes.</string>
+    <string name="changelogTitle">About Covid-19 </string>
+    <string name="changelog">\u2022 Coronavirus disease (COVID-19) is an infectious disease caused by a newly discovered coronavirus. Most people infected with the COVID-19 virus will experience mild to moderate respiratory illness and recover without requiring special treatment.  Older people, and those with underlying medical problems like cardiovascular disease, diabetes, chronic respiratory disease, and cancer are more likely to develop serious illness.\n Stay Safe!</string>
 </resources>
