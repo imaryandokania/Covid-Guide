@@ -64,7 +64,7 @@ public class WorldDataActivity extends AppCompatActivity {
         swipeRefreshLayout = findViewById(R.id.main_refreshLayout);
         Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
-        Objects.requireNonNull(getSupportActionBar()).setTitle("Covid-19 Status (World)");
+        Objects.requireNonNull(getSupportActionBar()).setTitle("Covid-19 Guide (World)");
 
         getWindow().setNavigationBarColor(ContextCompat.getColor(this, R.color.colorPrimaryDark));
         showProgressDialog();
