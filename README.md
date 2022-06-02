@@ -24,7 +24,9 @@
 <img src="https://user-images.githubusercontent.com/61244704/171610986-497d945f-18de-4d02-950f-7f409b757d1d.png" alt="project-screenshot" width="200" height="400/">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <img src="https://user-images.githubusercontent.com/61244704/171611001-1892b6d5-72c1-461b-bd12-7f78e197b525.png" alt="project-screenshot" width="200" height="400/">
 </p>
-The source code for Telegram Chat Bot: <br>
+Custom API built and hosted in Rapid Api:
+<li>https://rapidapi.com/aryandokania2001/api/cov-resource-india/ <br><br>
+<img src="https://user-images.githubusercontent.com/61244704/171616795-a98eeb3f-6c8d-4c5e-96e7-e818771b50f5.png" alt="project-screenshot" width="800" height="400/"><br>
 The Telegram chat bot runs on Java Threads <br><br>
 Some of the API's used:
 <ul>
